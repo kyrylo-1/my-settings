@@ -95,6 +95,11 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
     "key": "ctrl+r ctrl+e",
     "command": "workbench.action.openRecent"
   },
@@ -103,17 +108,16 @@
     "command": "-workbench.action.openRecent"
   },
   {
-    "key": "alt+right",
-    "command": "-gitlens.key.alt+right",
-    "when": "gitlens:key:alt+right"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "-editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
     "key": "ctrl+m ctrl+f",
     "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "-notification.acceptPrimaryAction",
+    "when": "notificationToastsVisible"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "explorer.newFile"
   }
 ]
