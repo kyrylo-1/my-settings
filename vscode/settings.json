@@ -41,7 +41,7 @@
   "editor.bracketPairColorization.enabled": true,
   "files.associations": {
     "*.json": "json",
-    "*.tsx": "typescriptreact",
+    "*.tsx": "typescriptreact"
   },
   "javascript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifier": "relative",
@@ -66,14 +66,31 @@
     "USERPROFILE",
     "uuidv"
   ],
-  "git.confirmSync": false,
-  "explorer.confirmDelete": false,
-  "redhat.telemetry.enabled": false,
-  "workbench.editor.wrapTabs": true,
-  "explorer.autoReveal": false,
-  "editor.inlineSuggest.showToolbar": "always",
-  "git.inputValidationLength": 172,
-  "git.inputValidation": "off",
-  "prettier.printWidth": 90,
-  "hediet.vscode-drawio.resizeImages": null
+   "gitlens.currentLine.enabled": false,
+   "editor.inlineSuggest.showToolbar": "always",
+   "explorer.autoReveal": false,
+   "explorer.confirmDelete": false,
+   "git.confirmSync": false,
+   "git.inputValidation": "off",
+   "git.inputValidationLength": 172,
+   "gitlens.currentLine.pullRequests.enabled": false,
+   "gitlens.currentLine.scrollable": false,
+   "hediet.vscode-drawio.resizeImages": null,
+   "prettier.printWidth": 90,
+   "redhat.telemetry.enabled": false,
+   "security.restrictUNCAccess": false,
+   "workbench.editor.wrapTabs": true,
+   "cSpell.allowCompoundWords": true, 
+   "cSpell.ignorePaths": [
+    "node_modules", // this will ignore anything the node_modules directory
+    "**/node_modules", // the same for this one
+    "**/node_modules/**", // the same for this one
+    "node_modules/**", // Doesn't currently work due to how the current working directory is determined.
+    "vscode-extension", //
+    ".git", // Ignore the .git directory
+    "*.dll", // Ignore all .dll files.
+    "**/*.dll" // Ignore all .dll files
+  ],
+  "security.workspace.trust.banner": "always",
+  "cSpell.ignoreRegExpList": ["settings.json"]
 }

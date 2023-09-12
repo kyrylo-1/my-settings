@@ -113,11 +113,6 @@
   },
   {
     "key": "ctrl+shift+a",
-    "command": "-notification.acceptPrimaryAction",
-    "when": "notificationToastsVisible"
-  },
-  {
-    "key": "ctrl+shift+a",
     "command": "explorer.newFile"
   }
 ]
