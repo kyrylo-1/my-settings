@@ -1,0 +1,95 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "GitHub Dark",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true,
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "gitlens.menus": null,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": null
+  },
+  "python.formatting.blackArgs": ["--line-length", "120"],
+  "python.formatting.provider": "black",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "C:\\Windows\\System32\\cmd.exe (migrated)": {
+      "path": "C:\\Windows\\System32\\cmd.exe",
+      "args": []
+    }
+  },
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/CVS": false,
+    "**/Thumbs.db": false
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.bracketPairColorization.enabled": true,
+  "files.associations": {
+    "*.json": "json",
+    "*.tsx": "typescriptreact"
+  },
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "eslint.options": {
+    "configFile": "C:/Users/I/Documents/myProjects/bms-flow/WebClient/.eslintrc.json"
+  },
+  "editor.inlayHints.enabled": false,
+  "typescript.format.enable": false,
+  "gitlens.strings.codeLens.unsavedChanges.recentChangeOnly": "",
+  "github.gitAuthentication": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "material-ui-snippets.showNotesOnStartup": false,
+  "workbench.sideBar.location": "right",
+  "editor.inlineSuggest.enabled": true,
+  "cSpell.dictionaries": ["Vite"],
+  "explorer.copyRelativePathSeparator": "/",
+  "cSpell.userWords": [
+    "Ardalis",
+    "aspnet",
+    "ASPNETCORE",
+    "Avramenko",
+    "clsx",
+    "gpt",
+    "kyrylo",
+    "mirec",
+    "Prescryptive",
+    "USERPROFILE"
+  ],
+  "git.confirmSync": false,
+  "explorer.confirmDelete": false,
+  "redhat.telemetry.enabled": false,
+  "workbench.editor.wrapTabs": true,
+  "cSpell.allowCompoundWords": true,
+  "cSpell.ignorePaths": [
+    "node_modules", // this will ignore anything the node_modules directory
+    "**/node_modules", // the same for this one
+    "**/node_modules/**", // the same for this one
+    "node_modules/**", // Doesn't currently work due to how the current working directory is determined.
+    "vscode-extension", //
+    ".git", // Ignore the .git directory
+    "*.dll", // Ignore all .dll files.
+    "**/*.dll" // Ignore all .dll files
+  ],
+  "gitlens.currentLine.enabled": false,
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "gitlens.currentLine.scrollable": false,
+  "security.restrictUNCAccess": false,
+  "security.workspace.trust.banner": "always",
+  "cSpell.ignoreRegExpList": ["settings.json"],
+  "explorer.autoReveal": false
+}
