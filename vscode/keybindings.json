@@ -95,6 +95,11 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
+    "key": "ctrl+d ctrl+a",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
     "key": "ctrl+d",
     "command": "-editor.action.addSelectionToNextFindMatch",
     "when": "editorFocus"
