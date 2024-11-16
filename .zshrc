@@ -1,6 +1,4 @@
-
 export ZSH="$HOME/.oh-my-zsh"
-
 
 ZSH_THEME="robbyrussell"
 
@@ -22,4 +20,3 @@ alias cls='clear'
 alias reload='source ~/.zshrc'
 
 alias zs='code ~/.zshrc'
-
