@@ -12,7 +12,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 alias sshhome="cd ~/.ssh"
 
-alias gs='git status'
+
 alias cls='clear'
 
 # Reload zshrc file to apply changes.
@@ -20,3 +20,27 @@ alias cls='clear'
 alias reload='source ~/.zshrc'
 
 alias zs='code ~/.zshrc'
+
+function flushdns(){
+    sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+}
+
+### GIT
+alias gs='git status'
+alias gb="git --no-pager branch"
+
+function grfullme() {
+    curr_br=$(git branch --show-current)
+    git checkout $(git_main_branch) 
+    git pull
+    git checkout "$curr_br"
+    git merge --no-edit $(git_main_branch)
+}
+
+# Delete current branch and checkout to main branch
+function gmainDelCurr() {
+    curr_br=$(git branch --show-current)
+    git checkout $(git_main_branch) 
+    git pull
+    git branch --delete "$curr_br"
+}
